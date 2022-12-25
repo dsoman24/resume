@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1671788656 "/Users/danieloman1/Library/CloudStorage/OneDrive-Personal/Documents/All/Work/Documents/Resumes/Resumes/resume.tex" "resume.pdf" "resume" 1671788657
-  "/Users/danieloman1/Library/CloudStorage/OneDrive-Personal/Documents/All/Work/Documents/Resumes/Resumes/resume.tex" 1671788656 6527 933b75747b6a135abc1ee85fa57a08a3 ""
+["pdflatex"] 1671886178 "/Users/danieloman1/Library/CloudStorage/OneDrive-Personal/Documents/All/Work/Documents/Resumes/Resumes/resume.tex" "resume.pdf" "resume" 1671886179
+  "/Users/danieloman1/Library/CloudStorage/OneDrive-Personal/Documents/All/Work/Documents/Resumes/Resumes/resume.tex" 1671886178 6527 933b75747b6a135abc1ee85fa57a08a3 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc" 1600636029 2211 c42193888177bc8f86d55dca129a9358 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -117,9 +117,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1651764965 2826440 e8b47d82adfc491f332ceed371af69b0 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "resume.aux" 1671788657 686 e6bf9f11827e1eae1d85e75b99e0a183 "pdflatex"
+  "resume.aux" 1671886179 686 e6bf9f11827e1eae1d85e75b99e0a183 "pdflatex"
   "resume.out" 0 -1 0 "pdflatex"
-  "resume.tex" 1671788656 6527 933b75747b6a135abc1ee85fa57a08a3 ""
+  "resume.tex" 1671886178 6527 933b75747b6a135abc1ee85fa57a08a3 ""
   (generated)
   "resume.aux"
   "resume.log"
