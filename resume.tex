@@ -3,15 +3,15 @@
 \usepackage[margin=1.3cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{environ}
-\newcommand{\horizontal}{\vspace{3pt}\hrule}
-\newcommand{\school}[3]{\vspace{3pt}\textsc{\textbf{#1}} \hfill \textbf{\textit{#2}} \\ #3}
-\newcommand{\sectitle}[1]{\vspace{3pt} \textbf{\large #1} \horizontal}
+\newcommand{\horizontal}{\vspace{2pt}\hrule}
+\newcommand{\school}[3]{\vspace{2pt}\textsc{\textbf{#1}} \hfill \textbf{\textit{#2}} \\ #3}
+\newcommand{\sectitle}[1]{\vspace{2pt} \textbf{\large #1} \horizontal}
 \newcommand{\skill}[2]{\textbf{#1:} #2}
 
 \usepackage{xparse}
 \NewDocumentEnvironment{experience}{mmmm}
     {
-        \vspace{3pt}
+        \vspace{2pt}
         \textsc{\textbf{#1}} \hfill #2
 
         \textit{\textbf{#3 \hfill #4}}
@@ -35,7 +35,7 @@
 
 \NewDocumentEnvironment{experience_no_list}{mmmm}
     {
-        \vspace{3pt}
+        \vspace{2pt}
         \textsc{\textbf{#1}} \hfill #2
 
         \textit{\textbf{#3 \hfill #4}}
@@ -70,8 +70,8 @@
 
     \begin{experience}{Georgia Tech College of Computing}{Atlanta, GA}{Undergraduate Teaching Assistant}{August 2022 -- Present}
         \item Collaborating with professor and other teaching assistants to teach Java object-oriented-programming concepts to $\sim$30 students during weekly recitations
-        \item Grading exams and homework, writing homework assignments, and writing auto-graded unit tests in Java for $\sim$550 students
-        \item Helping students with problem solving and code debugging during weekly office hour sessions
+        \item Grading exams and homework, writing homework assignments, and writing auto-graded unit tests in Java for $\sim$700 students
+        \item Helping students with problem solving and code debugging during weekly one-on-one office hours
     \end{experience}
 
     \begin{experience}{Ermi}{Atlanta, GA}{Engineering Intern}{July -- August 2021}
@@ -92,9 +92,9 @@
 
 \sectitle{Leadership and Involvement}
 
-    % \begin{experience}{Georgia Tech Financial Services and Innovation Lab}{Atlanta, GA}{Vertically Integrated Project Research Assistant}{January 2023 -- Present}
-    %     \item Developing and applying natural language processing and machine learning models for financial markets under Dr. Sudheer Chava
-    % \end{experience}
+    \begin{experience}{Georgia Tech Financial Services and Innovation Lab}{Atlanta, GA}{Undergraduate Research Assistant}{January 2023 -- Present}
+        \item Developing and applying natural language processing models to predict trends in financial markets under Dr. Sudheer Chava
+    \end{experience}
 
     \begin{experience}{Consult Your Community}{Atlanta, GA}{Business Analyst}{August -- December 2022}
         \item Conducted market research for a local sauce company to solidify the client's target audience and revamp social media strategy
@@ -110,10 +110,10 @@
 
     \vspace{3pt}
 
-    \begin{subexperience}{Minesweeper (Personal Project)}{December 2022 -- Present}
-        \item Developing a Minesweeper game in Java using depth-first search algorithms for game logic and win/loss checking
-        \item Utilizing JavaFX for the graphical user interface and writing algorithms for a bot that plays the game
-    \end{subexperience}
+    % \begin{subexperience}{Minesweeper (Personal Project)}{December 2022 -- Present}
+    %     \item Developing a Minesweeper game in Java using depth-first search algorithms for game logic and win/loss checking
+    %     \item Utilizing JavaFX for the graphical user interface and writing algorithms for a bot that plays the game
+    % \end{subexperience}
 
     \begin{subexperience}{Ruter-Sju Card Game Bot and Monte Carlo Simulation (Personal Project)}{December 2021 -- November 2022}
         \item Designed and implemented algorithms in Python to play card game Ruter-Sju to investigate best game strategy
