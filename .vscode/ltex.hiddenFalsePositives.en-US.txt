@@ -1,3 +1,0 @@
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qexperience_no_list mmmm #1 #2\\E$"}
-{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qexperience mmmm #1 #2\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qexperience mmmm #1 #2\\E$"}
