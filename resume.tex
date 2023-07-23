@@ -33,10 +33,10 @@
         \end{itemize}
     }
 
-\NewDocumentEnvironment{project}{mmmm}
+\NewDocumentEnvironment{project}{mmm}
     {
 
-        \textbf{\href{#2}{#1}} $|$ \textit{#3} \hfill \textbf{\textit{#4}}
+        \textbf{\href{#2}{#1}} $|$ \textit{#3}
 
         \begin{itemize}[noitemsep,topsep=0pt]
     }
@@ -74,7 +74,7 @@
 \sectitle{Work Experience}
 
     \begin{experience}{Google}{Sunnyvale, CA}{STEP Intern}{May -- August 2023}
-        \item Built and tested an efficient parallel-processing data pipeline using FlumeJava, a Java MapReduce framework, to extract and aggregate over 70 useful web-domain level signals from the HTML of over 500 billion web pages.
+        \item Built and tested an efficient parallel-processing data pipeline using FlumeJava, a Java MapReduce framework, to extract and aggregate over 70 business-useful web domain level signals from the HTML of over 500 billion web pages.
         \item Designed and implemented a novel scalable and extensible data aggregation architecture which reduced signal implementation time by 50\% and eliminated boilerplate code.
         \item Refactored pipeline to improve reliability by developing a checkpoint system to flush intermediate output during a full table scan.
         \item Extracted signals are used by Google Workspace's Growth \& Revenue Optimization team's machine learning models, utilized for predicting account upgrade, downgrade, and cancellation behaviors.
@@ -113,13 +113,13 @@
 
     \vspace{3pt}
 
-    \begin{project}{Minesweeper Probabilistic Strategy}{https://github.com/dsoman24/minesweeper}{Java, JavaFX, Python, Pandas, Jupyter Notebook}{December 2022 -- July 2023}
+    \begin{project}{Minesweeper Probabilistic Strategy}{https://github.com/dsoman24/minesweeper}{Java, JavaFX, Python, Pandas, Jupyter Notebook}
         \item Developed a probabilistic algorithm in Java to solve Minesweeper games with 96\%, 80\%, and 30\% win rates for easy, medium, and hard difficulties, significantly higher than the approximate 46\%, 22\%, and 13\% respective human win rates.
         \item Built row reduction and tree-traversal algorithms to reduce game state matrix dimensionality, lowering solution time by over 30\%.
         \item Implemented gameplay from scratch in Java and used JavaFX for a responsive graphical user interface.
     \end{project}
 
-    \begin{project}{Ruter-Sju Card Game Bot and Monte Carlo Simulation}{https://github.com/dsoman24/ruter-sju}{Python, Pandas, NumPy, PyPlot}{December 2021 -- November 2022}
+    \begin{project}{Ruter-Sju Card Game Bot and Monte Carlo Simulation}{https://github.com/dsoman24/ruter-sju}{Python, Pandas, NumPy, PyPlot}
         \item Designed and implemented algorithms in Python to play card game Ruter-Sju to investigate best game strategy.
         \item Built a Monte Carlo simulation with 20k+ games and used Pandas and PyPlot libraries to analyze and visualize game data.
     \end{project}
