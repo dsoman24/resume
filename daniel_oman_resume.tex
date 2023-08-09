@@ -5,7 +5,7 @@
 \usepackage{environ}
 \newcommand{\horizontal}{\vspace{2pt}\hrule}
 \newcommand{\school}[3]{\vspace{2pt}\textsc{\textbf{#1}} \hfill \textbf{\textit{#2}} \\ #3}
-\newcommand{\sectitle}[1]{\vspace{2pt} \textbf{\large #1} \horizontal}
+\newcommand{\sectitle}[1]{\vspace{3pt} \textbf{\large #1} \horizontal}
 \newcommand{\skill}[2]{\textbf{#1:} #2}
 
 \usepackage{xparse}
@@ -75,9 +75,9 @@
 
     \begin{experience}{Google}{Sunnyvale, CA}{STEP Intern}{May -- August 2023}
         \item Built and tested an efficient parallel-processing data pipeline using FlumeJava, a Java MapReduce framework, to extract and aggregate over 70 web domain level features from a database containing the HTML of more than 500 billion web pages.
-        \item Designed and implemented a novel scalable and extensible data aggregation architecture by applying OOP design patterns and advanced Java principles which reduced feature implementation time by over 50\% and eliminated boilerplate code.
-        \item Refactored pipeline to improve reliability by developing a system to flush intermediate output to disk across 100k+ threads during a full table scan, saving up to 7 days of progress during each pipeline execution.
-        \item Extracted features are used in production to train Google Workspace's Growth \& Revenue Optimization team's machine learning models, utilized for predicting account upgrade, downgrade, and cancellation behaviors.
+        \item Designed and implemented a scalable and extensible data aggregation architecture by applying advanced OOP design patterns that reduced feature implementation time by over 50\% and provided an intuitive interface for future feature store contributions.
+        \item Refactored pipeline to improve reliability by developing a system to flush intermediate output to disk across 100k+ threads during a full table scan, preventing data loss and saving more than 7 days of progress during each pipeline execution.
+        \item Implemented features increased customer coverage by 20\% over the existing feature store and are used in production to train machine learning models utilized for predicting Google Workspace account upgrade, downgrade, and cancellation behaviors.
         % \item Implemented signals outperformed the existing feature store by X\% on Google Workspace's Growth \& Revenue Optimization team's machine learning models, utilized for predicting account upgrade, downgrade, and cancellation behaviors.
     \end{experience}
 
@@ -104,7 +104,7 @@
 \sectitle{Leadership and Involvement}
 
     \begin{experience}{Georgia Tech Financial Services and Innovation Lab}{Atlanta, GA}{Undergraduate Researcher}{January -- May 2023}
-        \item Led a team of 4 researchers in performing sentiment analysis on earnings calls transcripts on 12 electric vehicle companies using the natural language processing model FinBERT and library NLTK.
+        \item Led a team of 4 researchers in performing sentiment analysis on earnings calls transcripts on 12 electric vehicle companies using the large language model FinBERT and natural language processing library NLTK.
         \item Developed a custom web scraper using Beautiful Soup to extract over 70 earnings call transcripts from The Motley Fool.
         \item Created dynamic visualizations from analyzed text data to conclude that 5 major US government policies drove spikes in positive sentiment in earning calls from companies that focus on electric vehicle production.
     \end{experience}
