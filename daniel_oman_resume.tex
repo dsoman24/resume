@@ -1,14 +1,20 @@
 \documentclass{article}
+\usepackage{xparse}
 
 \usepackage[margin=1.3cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{environ}
+\usepackage{newtxtext,newtxmath}
+\usepackage{anyfontsize}
+\usepackage{enumitem}
+
 \newcommand{\horizontal}{\vspace{2pt}\hrule}
 \newcommand{\school}[3]{\vspace{2pt}\textsc{\textbf{#1}} \hfill \textbf{\textit{#2}} \\ #3}
 \newcommand{\sectitle}[1]{\vspace{3pt} \textbf{\large #1} \horizontal}
 \newcommand{\skill}[2]{\textbf{#1:} #2}
 
-\usepackage{xparse}
+% MACROS
+
 \NewDocumentEnvironment{experience}{mmmm}
     {
         \vspace{2pt}
@@ -52,10 +58,6 @@
         \textit{\textbf{#3 \hfill #4}}
 
     }{}
-
-\usepackage{newtxtext,newtxmath}
-\usepackage{anyfontsize}
-\usepackage{enumitem}
 
 \begin{document}
 \thispagestyle{empty}
