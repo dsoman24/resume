@@ -76,13 +76,13 @@
 \sectitle{Experience}
 
     \begin{experience}{Google}{Sunnyvale, CA}{STEP Intern}{May -- August 2023}
-        \item Built and tested an efficient parallel-processing data pipeline using FlumeJava, a Java MapReduce framework, to extract and aggregate over 70 web domain level ML features from a database containing the HTML of more than 500 billion web pages.
+        \item Implemented and tested an efficient parallel-processing data pipeline being used in production to train machine learning models that predict Google Workspace account upgrade, downgrade, and churn behaviors.
+        \item Built pipeline using FlumeJava, a Java MapReduce framework, to extract and aggregate 70+ web domain level ML features from a database containing the HTML of more than 500 billion web pages, increasing customer coverage in the feature store by 20\%.
         \item Designed and implemented a scalable and extensible data aggregation architecture by applying advanced OOP design patterns that reduced feature implementation time by over 50\% and provided an intuitive interface for future feature store contributions.
-        \item Refactored pipeline to improve reliability by developing a system to flush intermediate output to disk across 100k+ threads during a full table scan, preventing data loss and saving more than 7 days of progress during each pipeline execution.
-        \item New feature store increased customer coverage by 20\% over the existing store and is used in production to train machine learning models utilized for predicting Google Workspace account upgrade, downgrade, and churn behaviors.
+        \item Refactored pipeline to improve reliability by developing a system to flush intermediate output to disk across 100k+ threads during a full table scan, preventing data loss by storing more than 7 days of data progress during each pipeline execution.
     \end{experience}
 
-    \begin{experience}{Georgia Tech Financial Services and Innovation Lab}{Atlanta, GA}{Undergraduate Researcher}{January -- May 2023}
+    \begin{experience}{Georgia Tech Financial Services and Innovation Lab}{Atlanta, GA}{Undergraduate Researcher (Subteam Lead)}{January -- May 2023}
         \item Led a team of 4 researchers in performing sentiment analysis on earnings calls transcripts on 12 electric vehicle companies using the large language model FinBERT and natural language processing library NLTK.
         \item Developed a custom web scraper using Beautiful Soup to extract over 70 earnings call transcripts from The Motley Fool.
         \item Created dynamic visualizations from analyzed text data to conclude that 5 major US government policies drove spikes in positive sentiment in earning calls from companies that focus on electric vehicle production.
@@ -94,14 +94,10 @@
         \item Grade 4 exams per semester and write auto-grader unit tests for assignments using the Java Reflections library.
     \end{experience}
 
-    \begin{experience}{Ermi}{Atlanta, GA}{Engineering Intern}{July -- August 2021}
-        \item Analyzed data and created decision trees from health insurance claims data from over 1000 knee surgery patients using R.
-        \item Identified the highest cost patients to target for non-surgical intervention.
+    \begin{experience}{Ermi}{Atlanta, GA}{Engineering Intern}{July -- August 2019, July -- August 2021}
+        \item Analyzed data and created decision trees from health insurance claims data from over 1000 knee surgery patients using R, identifying the highest cost patients to target for non-surgical intervention.
+        \item Wrote R scripts to analyze 10k+ data points from a robot that diagnoses knee injuries to assess and visualize its reliability and accuracy, with analysis to be incorporated into research papers.
     \end{experience}
-    \begin{subexperience}{Engineering Intern}{July -- August 2019}
-        \item Analyzed 10k+ data points from a robot that diagnoses knee injuries, with analysis to be incorporated into research papers.
-        \item Learned and used R to organize and visualize datasets in over 40 plots to assess the reliability and accuracy of the robot.
-    \end{subexperience}
 
     \begin{experience}{Georgia Tech Research Institute}{Atlanta, GA}{Research Intern}{June -- July 2020}
         \item Worked in a team of 4 to develop an app that creates a Bluetooth mesh network for emergency communication.
@@ -115,7 +111,6 @@
     \begin{project}{Minesweeper Probabilistic Strategy}{https://github.com/dsoman24/minesweeper}{Java, JavaFX, Python, Pandas, Jupyter Notebook}{December 2022 -- July 2023}
         \item Developed a probabilistic algorithm in Java to solve Minesweeper games with 96\%, 80\%, and 30\% win rates for easy, medium, and hard difficulties, significantly higher than the approximate 46\%, 22\%, and 13\% respective human win rates.
         \item Built row reduction and tree-traversal algorithms to reduce game state matrix dimensionality, lowering solution time by over 30\%.
-        % \item Implemented gameplay from scratch in Java and used JavaFX for a responsive graphical user interface.
     \end{project}
 
     \begin{project}{Ruter-Sju Card Game Bot and Monte Carlo Simulation}{https://github.com/dsoman24/ruter-sju}{Python, Pandas, NumPy, PyPlot}{December 2021 -- March 2022}
@@ -127,6 +122,7 @@
 
     \vspace{3pt}
     \skill{Technologies}{Java (Including JavaFX, Android Studio), Python (Including Pandas, NumPy, Beautiful Soup), C, SQL, Git, LaTeX, R} \\
+    \skill{Concepts}{Big Data, Machine Learning, Algorithms} \\
     \skill{Languages}{Fluent in Spanish, Swedish, English} \\
     \skill{Affiliations}{Delta Chi Fraternity (Scholarship Chairman), Society of Hispanic Professional Engineers, Consult Your Community}
 
