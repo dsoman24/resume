@@ -1,66 +1,11 @@
 \documentclass{article}
-\usepackage{xparse}
 
-\usepackage[margin=1.3cm]{geometry}
-\usepackage[hidelinks]{hyperref}
-\usepackage{environ}
-\usepackage{newtxtext,newtxmath}
-\usepackage{anyfontsize}
-\usepackage{enumitem}
-
-\newcommand{\horizontal}{\vspace{2pt}\hrule}
-\newcommand{\school}[3]{\vspace{2pt}\textsc{\textbf{#1}} \hfill \textbf{\textit{#2}} \\ #3}
-\newcommand{\sectitle}[1]{\vspace{3pt} \textbf{\large #1} \horizontal}
-\newcommand{\skill}[2]{\textbf{#1:} #2}
-
-% MACROS
-
-\NewDocumentEnvironment{experience}{mmmm}
-    {
-        \vspace{2pt}
-        \textsc{\textbf{#1}} \hfill #2
-
-        \textit{\textbf{#3 \hfill #4}}
-
-        \begin{itemize}[noitemsep,topsep=0pt]
-    }
-    {
-        \end{itemize}
-    }
-
-\NewDocumentEnvironment{subexperience}{mm}
-    {
-
-        \textit{\textbf{#1 \hfill #2}}
-
-        \begin{itemize}[noitemsep,topsep=0pt]
-    }
-    {
-        \end{itemize}
-    }
-
-\NewDocumentEnvironment{project}{mmmm}
-    {
-
-        \textbf{\href{#2}{#1}} $|$ \textit{#3} \hfill \textit{\textbf{#4}}
-
-        \begin{itemize}[noitemsep,topsep=0pt]
-    }
-    {
-        \end{itemize}
-    }
-
-\NewDocumentEnvironment{experiencenolist}{mmmm}
-    {
-        \vspace{2pt}
-        \textsc{\textbf{#1}} \hfill #2
-
-        \textit{\textbf{#3 \hfill #4}}
-
-    }{}
+\input{preamble}
 
 \begin{document}
+
 \thispagestyle{empty}
+
 \begin{center}
     \textbf{\LARGE Daniel Öman} \\
     dsoman24@gmail.com $|$ (470) 553-5299 $|$ Atlanta, GA \\
@@ -68,6 +13,7 @@
 \end{center}
 
 \begin{flushleft}
+
 \sectitle{Education}
 
 \school{Georgia Institute of Technology}{August 2021 -- May 2025 (expected)}
