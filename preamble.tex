@@ -9,6 +9,16 @@
 \usepackage{anyfontsize}
 \usepackage{enumitem}
 
+\newcommand{\header}[6]{
+    \begin{center}
+        \textbf{\LARGE #1} \\
+        #2 $|$
+        #3 $|$
+        #4 $|$
+        \href{https://github.com/#5}{github.com/#5} $|$
+        \href{https://www.linkedin.com/in/#6}{linkedin.com/in/#6}
+    \end{center}
+}
 \newcommand{\horizontal}{\vspace{2pt}\hrule}
 \newcommand{\school}[3]{\vspace{2pt}\textsc{\textbf{#1}} \hfill \textbf{\textit{#2}} \\ #3}
 \newcommand{\sectitle}[1]{\vspace{3pt} \textbf{\large #1} \horizontal}
