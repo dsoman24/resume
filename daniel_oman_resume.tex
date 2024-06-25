@@ -17,11 +17,14 @@
 
 \sectitle{Experience}
 
-    \begin{experiencenolist}{\href{https://www.playerzero.ai/}{PlayerZero}}{Atlanta, GA}{Incoming Software Engineering Intern}{August -- December 2024}
-    \end{experiencenolist}
+    % \begin{experiencenolist}{\href{https://www.playerzero.ai/}{PlayerZero}}{Atlanta, GA}{Software Engineering Intern}{August -- December 2024}
+    % \end{experiencenolist}
 
     \begin{experience}{Google}{Kirkland, WA}{Software Engineering Intern}{May -- August 2024}
-        \item Design and implement a C++ performance testing framework to gauge scalability of a novel metadata streaming system within Google BigQuery.
+        \item Design and implementat a distributed load testing framework using C++ and Python to gauge scalability of a novel data streaming service and write-ahead log within Google BigQuery.
+        \item Implement continuous runs of the framework as a custom workflow to be used in development to detect bottlenecks and prevent latency and throughput regressions before reaching production, leading to a projected 20\% reduction in server request latency.
+        \item New load sampling framework reduces test implementation time by 50\%, enabling faster iteration cycles for performance testing.
+        \item Engineering custom monitoring dashboards, allowing for 3x faster detection of critical performance regressions.
     \end{experience}
 
     \begin{experience}{Georgia Tech Efficient and Intelligent Computing Lab}{Atlanta, GA}{Undergraduate Research Assistant}{January -- May 2024}
@@ -30,21 +33,21 @@
     \end{experience}
 
     \begin{experience}{Georgia Tech College of Computing}{Atlanta, GA}{Undergraduate Teaching Assistant (Homework Lead)}{August 2022 -- May 2024}
-        \item Managed a team of 40 TAs in the development and grading of 12 homework assignments per semester for over 800 students as TA Homework Lead for CS 1331: Intro to Object-Oriented Programming under Prof.~Richard Landry and Dr.~Aibek Musaev.
-        \item Led weekly recitations for 50 students and help students with problem-solving and debugging during one-on-one office hours.
+        \item Managed a team of 40 TAs in the development and grading of 12 homework assignments for over 800 students per semester as TA Homework Lead for CS 1331: Intro to Object-Oriented Programming (Java) under Prof.~Richard Landry and Dr.~Aibek Musaev.
+        \item Led weekly recitations for 50 students and helped students with problem-solving and debugging during one-on-one office hours.
     \end{experience}
 
     \begin{experience}{Google}{Sunnyvale, CA}{Software Engineering (STEP) Intern}{May -- August 2023}
         \item Implemented and tested an efficient parallel-processing data pipeline being used in production to train machine learning models that predict Google Workspace account upgrade, downgrade, and churn behaviors.
         \item Built pipeline using FlumeJava, a Java MapReduce framework, to extract and aggregate 70+ web domain level ML features from a database containing the HTML of more than 500 billion web pages, increasing customer coverage in the feature store by 20\%.
         \item Designed and implemented a scalable and extensible data aggregation architecture by applying advanced OOP design patterns that reduced feature implementation time by over 50\% and provided an intuitive interface for future feature store contributions.
-        \item Refactored pipeline to improve reliability by developing a system to flush intermediate output to disk across 100k+ threads during a full table scan, preventing data loss by storing more than 7 days of data progress during each pipeline execution.
+        \item Refactored pipeline to improve reliability by developing a system to flush intermediate output to a Spanner database across 100k+ threads during a full table scan, preventing data loss by storing more than 7 days of data progress during each pipeline execution.
     \end{experience}
 
     \begin{experience}{Georgia Tech Financial Services and Innovation Lab}{Atlanta, GA}{Undergraduate Research Assistant (Team Lead)}{January -- May 2023}
-        \item Led a team of 4 researchers in performing sentiment analysis on earnings calls transcripts on 12 electric vehicle companies using the large language model FinBERT and natural language processing library NLTK.
+        \item Led a team of 4 researchers developing a Python pipeline to perform sentiment analysis on earnings calls transcripts on 12 electric vehicle companies using the large language model FinBERT and natural language processing library NLTK.
         \item Developed a custom web scraper using Beautiful Soup to extract over 70 earnings call transcripts from The Motley Fool.
-        \item Created dynamic visualizations from analyzed text data to conclude that 5 major US government policies drove spikes in positive sentiment in earning calls from companies that focus on electric vehicle production.
+        % \item Created dynamic visualizations from analyzed text data to conclude that 5 major US government policies drove spikes in positive sentiment in earning calls from companies that focus on electric vehicle production.
     \end{experience}
 
 
@@ -52,8 +55,8 @@
 
     \vspace{3pt}
 
-    \begin{project}{Hemodynamics Calculator}{https://github.com/dsoman24/hemodynamics-calculator}{JavaScript, React, MongoDB, Express, Node}{August 2023 -- April 2024}
-        \item Developed the Hemodynamics Calculator, a full-stack application for the Emory University School of Medicine, to be used by 10 clinicians to reduce measurement error daily, critically impacting over 1,000 cardiac ICU patients a year.
+    \begin{project}{Hemodynamics Calculator}{https://github.com/dsoman24/hemodynamics-calculator}{JavaScript, ReactJS, MongoDB, Express, NodeJS}{August 2023 -- April 2024}
+        \item Developed the Hemodynamics Calculator, a full-stack MERN application for the Emory University School of Medicine used by over 10 clinicians to reduce blood flow measurement error daily, critically impacting more than 1,000 cardiac ICU patients a year.
         \item Placed 3rd out of 50 teams in the Georgia Tech CS Capstone Expo, presenting to 40+ industry professionals and professors.
     \end{project}
 
@@ -65,9 +68,10 @@
 \sectitle{Skills}
 
     \vspace{3pt}
-    \skill{Technologies}{Java (JUnit), C/C++, Python (Pandas, NumPy, sklearn, PyTorch, Flask), JavaScript (React, Express), SQL} \\
-    \skill{Languages}{Fluent in Spanish, Swedish, English} \\
-    \skill{Affiliations}{Delta Chi Fraternity (Secretary, Professional Development Chair), Society of Hispanic Professional Engineers} \\
+    \skill{Programming Languages}{Java, C/C++, Python, SQL, JavaScript, LaTeX} \\
+    \skill{Frameworks}{FlumeJava (MapReduce), JUnit, NumPy, Pandas, Scikit-Learn, PyTorch, ReactJS, NodeJS, Flask} \\
+    \skill{Tools}{Git, Mercurial, Bazel, Protobuf, gRPC, Spanner, MySQL, MongoDB} \\
+    % \skill{Languages}{Fluent in Spanish, Swedish, and English} \\
 
 \end{flushleft}
 
