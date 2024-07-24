@@ -33,9 +33,9 @@
 
     \begin{experience}{Google}{Kirkland, WA}{Software Engineering Intern}{May 2024 -- August 2024}
         \item Designed and implemented a custom distributed load testing framework using C++ and Python to benchmark the scalability of the streaming metadata change-log service within Google BigQuery's core storage infrastructure.
+        \item Built continuous test runs as a development workflow, leading to 70\% reduction in regressions before reaching production.
         \item Developed load sampling architecture to overload production traffic by sending 10k+ requests per second to the read and write RPC endpoints on a variable number of BigQuery tables, exposing production bottlenecks.
         \item Designed a multi-threaded metric sampling system with C++ to compute, aggregate, and analyze latency, throughput, and error rate metrics across 25+ load sampler instances concurrently over multiple machines, yielding increased benchmark accuracy.
-        \item Built continuous test runs as a development workflow, leading to 70\% reduction in regressions before reaching production.
         \item Fixed a critical service-level objective bug affecting BigQuery's storage metadata server by implementing request retry logic, eliminating the number of error spikes by $\sim$90\%.
     \end{experience}
 
@@ -53,7 +53,7 @@
         \item Designed, implemented, and tested an efficient parallel-processing data pipeline being used in production to provide features to train machine learning models that predict Google Workspace account upgrade, downgrade, and churn behaviors.
         \item Built pipeline using FlumeJava, a Java MapReduce framework, to extract and aggregate 70+ web domain level ML features from a database containing the HTML of more than 500 billion web pages, increasing customer coverage in the feature store by 20\%.
         \item Engineered a scalable and extensible data aggregation architecture by applying advanced OOP design patterns that reduced feature implementation time by over 50\% and provided an intuitive interface for future feature store contributions.
-        \item Refactored pipeline to improve reliability by developing a system to flush intermediate output to a Spanner database across 10k+ processes during a full table scan, preventing data loss by storing more than 7 days of data progress during each pipeline execution.
+        \item Refactored pipeline to improve reliability by developing a system to flush intermediate output to a Spanner database across 10k+ processes during a full table scan, preventing up to 7 days worth of lost data for each pipeline run.
     \end{experience}
 
     \sectitle{Projects}
