@@ -9,6 +9,11 @@
 \usepackage{anyfontsize}
 \usepackage{enumitem}
 
+% Space after a section
+\newcommand{\sectionSpace}{\vspace{4pt}}
+% Space after an experience
+\newcommand{\experienceSpace}{\vspace{4pt}}
+
 % This command defines a custom header for a resume.
 % Parameters:
 %   1. Name
@@ -28,13 +33,12 @@
     \end{center}
 }
 \newcommand{\horizontal}{\vspace{2pt}\hrule}
-\newcommand{\school}[3]{\vspace{2pt}\textsc{\textbf{#1}} \hfill \textbf{\textit{#2}} \\ #3}
-\newcommand{\sectitle}[1]{\vspace{3pt} \textbf{\large #1} \horizontal}
+\newcommand{\school}[3]{\vspace{2pt}\textsc{\textbf{#1}} \hfill \textbf{\textit{#2}} \\ #3 \sectionSpace}
+\newcommand{\sectitle}[1]{\vspace{3pt} \textbf{\large #1} \horizontal \vspace{4pt}}
 \newcommand{\skill}[2]{\textbf{#1:} #2}
 
 \NewDocumentEnvironment{experience}{mmmm}
     {
-        \vspace{2pt}
         \textsc{\textbf{#1}} \hfill #2
 
         \textit{\textbf{#3 \hfill #4}}
@@ -43,6 +47,7 @@
     }
     {
         \end{itemize}
+        \experienceSpace
     }
 
 \NewDocumentEnvironment{subexperience}{mm}
@@ -65,6 +70,7 @@
     }
     {
         \end{itemize}
+        \experienceSpace
     }
 
 \NewDocumentEnvironment{experiencenolist}{mmmm}
