@@ -24,22 +24,27 @@
     %Graduate Algorithms*
     %\textit{(* = current)}
     \\
-    \textit{Activities}: Delta Chi Fraternity (Secretary, Professional Development Chair), Society of Hispanic Professional Engineers
+    % \textit{Activities}: Delta Chi Fraternity (Secretary, Professional Development Chair), Society of Hispanic Professional Engineers
 }
 
 \sectitle{Experience}
 
+    \begin{experience}{Ditch}{Atlanta, GA}{Software Engineering Intern}{September 2024 -- Present}
+        \item Develop and launch new features for a fast-growing early-stage fintech startup's flagship mobile app with 3k+ users automating \$100k+ in debt repayment, by using Flutter/Dart for the frontend and Python with GCP Run Functions for the backend.
+        \item Implement custom recommendation systems leveraging Python, Firebase PostgreSQL, and OpenAI LLM APIs to provide users with personalized app experiences, leading to a decrease in user churn by 20\% and an increase in user engagement by 30\%.
+    \end{experience}
+
     \begin{experience}{Google}{Kirkland, WA}{Software Engineering Intern}{May 2024 -- August 2024}
-        \item Designed and implemented a custom distributed load testing framework using C++ and Python to benchmark the scalability of the streaming metadata change-log service within Google BigQuery's core storage infrastructure.
-        \item Built continuous test runs as a development workflow, leading to 70\% reduction in regressions before reaching production.
-        \item Developed load sampling architecture to simulate production traffic by sending 10k+ requests per second to the read and write RPC endpoints on a variable number of BigQuery tables, exposing production bottlenecks.
-        \item Designed a multi-threaded metric sampling system with C++ to compute, aggregate, and analyze latency, throughput, and error rate metrics across 25+ load sampler instances concurrently over multiple machines, yielding 50\% increased benchmark accuracy.
-        \item Led efforts to fix a critical service-level objective bug affecting BigQuery's storage metadata server by implementing request retry logic, eliminating the number of error spikes by $\sim$90\%.
+        \item Designed and implemented a distributed load testing framework in C++ and Python to benchmark the scalability of a streaming metadata change-log service within Google BigQuery's core infrastructure.
+        \item Designed continuous test runs as a custom development workflow, reducing regressions by 70\% before production.
+        \item Developed a load sampling system simulating 10k+ requests/sec to identify bottlenecks in the service's read/write RPC endpoints.
+        \item Built a multi-threaded C++ measurement system to analyze latency, throughput, and error rates, improving test accuracy by 50\%.
+        \item Led efforts to fix a critical SLO bug in the storage metadata server, eliminating error spikes by 90\% with request retry logic.
     \end{experience}
 
     \begin{experience}{Georgia Tech Efficient and Intelligent Computing Lab}{Atlanta, GA}{Undergraduate Research Assistant}{January -- May 2024}
         \item Contributed to a PyTorch toolkit used by 5+ Georgia Tech labs to train distributed Graph Neural Networks (GNNs) for applications with multiple large disjoint graphs, such as electronic design analysis and molecular modeling.
-        \item Built a user-friendly modular data loading and transfer API and implemented the GraphSAGE GNN forward propagation and graph vertex embedding algorithm, improving model accuracies by an average of 15\%.
+        \item Developed a modular data loading and transfer API and implemented GraphSAGE, improving model accuracy by 15\%.
     \end{experience}
 
     \begin{experience}{Georgia Tech College of Computing}{Atlanta, GA}{Undergraduate Teaching Assistant (Homework Lead)}{August 2022 -- May 2024}
@@ -48,10 +53,10 @@
     \end{experience}
 
     \begin{experience}{Google}{Sunnyvale, CA}{Software Engineering (STEP) Intern}{May -- August 2023}
-        \item Designed, implemented, and tested an efficient parallel-processing data pipeline being used in production to provide features to train machine learning models that predict Google Workspace account upgrade, downgrade, and churn behaviors.
-        \item Built pipeline using FlumeJava, a Java MapReduce framework, to extract and aggregate 70+ web domain level ML features from a database containing the HTML of more than 500 billion web pages, increasing customer coverage in the feature store by 20\%.
-        \item Engineered a scalable and extensible data aggregation architecture by applying advanced OOP design patterns that reduced feature implementation time by over 50\% and provided an intuitive interface for future feature store contributions.
-        \item Refactored pipeline to improve reliability by developing a system to flush intermediate output to a Spanner database across 10k+ processes during a full table scan, preventing up to 7 days worth of lost data for each pipeline run.
+        \item Designed and implemented an efficient parallel data pipeline for production use, generating 70+ features to train ML models predicting Google Workspace upgrade, downgrade, and churn behaviors.
+        \item Built pipeline using FlumeJava, a Java MapReduce framework, to extract and aggregate domain level ML features from a 500B+ webpage database, increasing customer coverage in the feature store by 20\%.
+        \item Engineered a scalable data aggregation architecture using advanced OOP patterns, reducing feature implementation time by 50\% and provided an intuitive code interface for future feature store contributions.
+        \item Improved pipeline reliability by developing a system to flush intermediate output from 10k+ processes to Spanner, preventing up to 7 days of data loss during full table scans.
     \end{experience}
 
     \sectitle{Projects}
@@ -59,21 +64,26 @@
     \vspace{3pt}
 
     \begin{project}{Hemodynamics Calculator}{https://github.com/dsoman24/hemodynamics-calculator}{JavaScript, ReactJS, MongoDB, Express, NodeJS}{August 2023 -- April 2024}
-        \item Developed the Hemodynamics Calculator, a full-stack MERN application for the Emory University School of Medicine used by over 10 clinicians to reduce blood flow measurement error daily, critically impacting more than 1,000 cardiac ICU patients a year.
+        \item Developed a full-stack app used by 10+ ICU clinicians, reducing blood flow measurement errors for 1,000+ patients annually.
         \item Placed 3rd out of 50 teams in the Georgia Tech CS Capstone Expo, presenting to 40+ industry professionals and professors.
     \end{project}
 
-    \begin{project}{Machine Learning Soccer Prediction}{https://dsoman24.github.io/ml-project/}{Python, Scikit-Learn, PyTorch, NumPy, Matplotlib, Seaborn}{August -- December 2023}
-        \item Worked on a team of 5 to build and train logistic regression, random forest, and artificial neural network models using Scikit-Learn and PyTorch to predict soccer match outcomes with 70\% accuracy, beating benchmark betting odds data by 8\%.
-        \item Built feature engineering strategies and conducted hyperparameter tuning to reduce overfitting, improving accuracy by $\sim$10\%.
+    % \begin{project}{Machine Learning Soccer Prediction}{https://dsoman24.github.io/ml-project/}{Python, Scikit-Learn, PyTorch, NumPy, Matplotlib, Seaborn}{August -- December 2023}
+    %     \item Worked on a team of 5 to build and train logistic regression, random forest, and artificial neural network models using Scikit-Learn and PyTorch to predict soccer match outcomes with 70\% accuracy, beating benchmark betting odds data by 8\%.
+    %     \item Built feature engineering strategies and conducted hyperparameter tuning to reduce overfitting, improving accuracy by $\sim$10\%.
+    % \end{project}
+
+    \begin{project}{Deep Learning Song Recommender}{https://dsoman24.github.io/}{Python, PyTorch, NumPy}{August 2024 -- Present}
+        \item Developed a multimodal deep learning model to recommend songs using audio, lyrics, and user history, trained on 1M+ songs.
+        \item Leveraged ConvNets, pretrained BERT, and a DNN to generate embeddings, achieving 80\% accuracy in predicting preferences.
     \end{project}
 
 \sectitle{Skills}
 
     \vspace{3pt}
-    \skill{Programming Languages}{Java, C/C++, Python, SQL, JavaScript, \LaTeX} \\
-    \skill{Frameworks}{FlumeJava (MapReduce), JUnit, NumPy, Pandas, Scikit-Learn, PyTorch, ReactJS, Express, NodeJS, Flask} \\
-    \skill{Tools}{Git, Mercurial, Bazel, Protobuf, gRPC, Spanner, MySQL, MongoDB} \\
+    \skill{Programming Languages}{Java, C/C++, Python, SQL, Dart, JavaScript, \LaTeX} \\
+    \skill{Frameworks}{FlumeJava (MapReduce), JUnit, NumPy, Pandas, Scikit-Learn, PyTorch, ReactJS, Express, NodeJS, Flutter, Flask} \\
+    \skill{Tools}{Git, Mercurial, Bazel, Protobuf, GCP, gRPC, Spanner, MySQL, PostgreSQL, MongoDB} \\
 
 \end{flushleft}
 
